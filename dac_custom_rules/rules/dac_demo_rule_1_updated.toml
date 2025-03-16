@@ -1,0 +1,45 @@
+[metadata]
+creation_date = "2025/03/16"
+integration = []
+maturity = "development"
+updated_date = "2025/03/16"
+
+[rule]
+actions = []
+author = ["james.spiteri@elastic.co"]
+description = "DAC Demo Rule 1"
+enabled = false
+exceptions_list = []
+false_positives = []
+from = "now-6m"
+interval = "5m"
+language = "esql"
+license = ""
+max_signals = 100
+name = "DAC Demo Rule 1 - Updated"
+references = []
+related_integrations = []
+required_fields = []
+risk_score = 21
+risk_score_mapping = []
+rule_id = "9cb010a4-2c50-439a-86ff-4b94039df1d3"
+setup = ""
+severity = "low"
+severity_mapping = []
+tags = []
+threat = []
+to = "now"
+type = "esql"
+
+query = '''
+FROM logs-* METADATA _id,_version,_index
+| WHERE host.name IS NOT NULL
+| KEEP host.name,_id,_version,_index,user.name
+| LIMIT 10
+'''
+
+
+
+[rule.meta]
+kibana_siem_app_url = "https://analyst-demo.kb.us-west2.gcp.elastic-cloud.com/s/dac/app/security"
+
