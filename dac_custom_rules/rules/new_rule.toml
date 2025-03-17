@@ -4,12 +4,12 @@ maturity = "development"
 updated_date = "2025/03/17"
 
 [rule]
-author = ["JAmes Spiteri"]
-description = "DAC Demo New"
+author = ["James"]
+description = "Newer Rule"
 language = "kuery"
-name = "DAC DEMO NEW"
+name = "New Rule"
 risk_score = 50
-rule_id = "114720a0-132b-47af-8dec-609fa5f5958d"
+rule_id = "f797ea0c-b929-442c-80ee-c17e04a9df30"
 severity = "high"
 type = "query"
 

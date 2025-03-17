@@ -1,0 +1,42 @@
+[metadata]
+creation_date = "2025/03/17"
+integration = []
+maturity = "development"
+updated_date = "2025/03/17"
+
+[rule]
+actions = []
+author = ["JAmes Spiteri"]
+description = "DAC Demo New"
+enabled = false
+exceptions_list = []
+false_positives = []
+from = "now-6m"
+interval = "5m"
+language = "kuery"
+max_signals = 100
+name = "DAC DEMO NEW"
+references = []
+related_integrations = []
+risk_score = 50
+risk_score_mapping = []
+rule_id = "114720a0-132b-47af-8dec-609fa5f5958d"
+setup = ""
+severity = "high"
+severity_mapping = []
+tags = []
+threat = []
+to = "now"
+type = "query"
+
+query = '''
+host.name:*
+'''
+
+
+[[rule.required_fields]]
+ecs = true
+name = "host.name"
+type = "keyword"
+
+
