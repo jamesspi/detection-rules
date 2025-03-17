@@ -1,0 +1,19 @@
+[metadata]
+creation_date = "2025/03/17"
+maturity = "development"
+updated_date = "2025/03/17"
+
+[rule]
+author = ["JAmes Spiteri"]
+description = "DAC Demo New"
+language = "kuery"
+name = "DAC DEMO NEW"
+risk_score = 50
+rule_id = "114720a0-132b-47af-8dec-609fa5f5958d"
+severity = "high"
+type = "query"
+
+query = '''
+host.name:*
+'''
+
