@@ -1,0 +1,19 @@
+[metadata]
+creation_date = "2025/03/17"
+maturity = "development"
+updated_date = "2025/03/17"
+
+[rule]
+author = ["James Spiteri"]
+description = "Test Rules"
+language = "kuery"
+name = "Test Rule"
+risk_score = 50
+rule_id = "d8fe8b89-b50c-4edf-996e-1d4ba26c3123"
+severity = "high"
+type = "query"
+
+query = '''
+host.name:*
+'''
+
